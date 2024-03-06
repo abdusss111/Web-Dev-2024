@@ -129,9 +129,18 @@ export class ProductsComponent {
     console.log("pressed");
   }
 
-  removeProduct(productId: number): void {
-    this.products = this.products.filter(product => product.id !== productId);
+  removeProduct(category: String, productId: number): void {
+    if (category === "phones") {
+      this.products_phones = this.products_phones.filter(product => product.id !== productId);
+    } else if (category === "laptops") {
+      this.products_laptops = this.products_laptops.filter(product => product.id !== productId);
+    } else if (category === "earphones") {
+      this.products_earphones = this.products_earphones.filter(product => product.id !== productId);
+    } else if (category === "desktops") {
+      this.products_desktops = this.products_desktops.filter(product => product.id !== productId);
+    }
   }
+
   sharing(id: number): void {
     const productLink = this.products[id-1].productLink;
     const encodedLink = encodeURIComponent(productLink);
