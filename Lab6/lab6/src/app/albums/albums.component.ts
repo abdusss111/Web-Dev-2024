@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Album} from "../models";
-import {NgFor} from "@angular/common";
+import {NgFor, CommonModule} from "@angular/common";
 import {ALBUMS} from "../fake-db";
 
 @Component({
@@ -8,6 +8,7 @@ import {ALBUMS} from "../fake-db";
   standalone: true,
   imports: [
     NgFor,
+    CommonModule,
     ALBUMS
   ],
   templateUrl: './albums.component.html',
