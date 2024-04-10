@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="db.sqlite3">
   <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.51">
-    <root id="1">
-      <ServerVersion>3.45.1</ServerVersion>
-    </root>
+    <root id="1"/>
     <collation id="2" parent="1" name="BINARY"/>
     <collation id="3" parent="1" name="NOCASE"/>
     <collation id="4" parent="1" name="RTRIM"/>
@@ -499,7 +497,7 @@
     </routine>
     <schema id="191" parent="1" name="main">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-04-03.12:52:12</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-04-04.19:02:03</LastIntrospectionLocalTimestamp>
     </schema>
     <argument id="192" parent="16">
       <ArgumentDirection>R</ArgumentDirection>
@@ -2065,34 +2063,39 @@ model</ColNames>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <key id="662" parent="566">
+    <column id="662" parent="566" name="category">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <key id="663" parent="566">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="663" parent="567" name="type">
+    <column id="664" parent="567" name="type">
       <DasType>TEXT|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="664" parent="567" name="name">
+    <column id="665" parent="567" name="name">
       <DasType>TEXT|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="665" parent="567" name="tbl_name">
+    <column id="666" parent="567" name="tbl_name">
       <DasType>TEXT|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="666" parent="567" name="rootpage">
+    <column id="667" parent="567" name="rootpage">
       <DasType>INT|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="667" parent="567" name="sql">
+    <column id="668" parent="567" name="sql">
       <DasType>TEXT|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="668" parent="568" name="name">
+    <column id="669" parent="568" name="name">
       <Position>1</Position>
     </column>
-    <column id="669" parent="568" name="seq">
+    <column id="670" parent="568" name="seq">
       <Position>2</Position>
     </column>
   </database-model>

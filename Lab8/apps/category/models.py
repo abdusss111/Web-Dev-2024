@@ -9,3 +9,5 @@ class Category(models.Model):
             'name': self.name,
             'id': self.id
         }
+
+

@@ -7,7 +7,7 @@ import { AlbumDetailComponent } from "./album-detail/album-detail.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 
 export const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: "full"},
+  // {path: '', redirectTo: 'home', pathMatch: "full"},
   {path: 'home', component: HomeComponent, title: 'Home'},
   {path: 'about', component: AboutComponent, title: 'About'},
   {path: 'albums', component: AlbumsComponent, title: 'Albums'},
