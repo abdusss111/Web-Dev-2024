@@ -12,4 +12,14 @@ class Vacancy(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     salary = models.FloatField()
-    company = models.ForeignKey(Company, on_delete=models.CASCADE)
+    company = models.ForeignKey(Company, on_delete=models.CASCADE, related_name='vacancies')
+
+
+    def to_json(self):
+        return {
+            'name': self.name,
+            'description': self.description,
+            'salary': self.salary,
+            'company': self.company.name,
+
+        }

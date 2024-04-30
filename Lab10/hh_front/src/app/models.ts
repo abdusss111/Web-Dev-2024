@@ -7,9 +7,10 @@ export interface Company {
 }
 
 export interface Vacancy {
+  id: number
   name: string
   description: string
-  salary: bigint
-  company: Company
+  salary: number
+  company_id: number
 }
 

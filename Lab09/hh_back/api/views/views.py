@@ -1,4 +1,4 @@
-from django.http import JsonResponse, HttpResponse
+from django.http import JsonResponse
 from api.models import Company, Vacancy
 from api.serializers import CompanySerializer, VacancySerializer
 
