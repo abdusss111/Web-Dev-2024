@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Microsoft 365</title>
+    </head>
+
+    <style> 
+    body{
+        font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+        .page_top{
+            font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size:13px;
+            color: #000;
+            position:absolute;
+            left:20px;
+            padding-bottom: 5px;
+        }
+        #microsoft-logo{
+            position:relative;
+            top:6px;
+            border-right: 2px solid black;
+            padding-right: 25px;
+        }
+        .page_top_left{
+            font-weight: 300;
+            position: relative;
+            left:70px;
+        }
+        #page_top_right{
+            font-weight: 300;
+            position:relative;
+            left:300px;
+        }
+        #enter{
+            padding:4px;
+            border:solid 1px rgb(93, 91, 212);
+            position: relative;
+            top:3px;
+            font-weight: bold;
+            color:rgb(93, 91, 212);
+        }
+        #download-teams{
+            color: rgb(93, 91, 212);
+            padding-bottom: 5px;
+            text-decoration:none;
+        }
+        #download-teams:hover{
+            padding-bottom: 5px;
+            border-bottom:2px solid black;
+        }
+        #teams{
+            position:relative;
+            bottom:-1px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #teams:hover{
+            border-bottom: 2px solid black;
+        }
+        #products:hover, #functions:hover, #price:hover, #spheres:hover, #resources:hover, #support:hover{
+            padding-bottom:5px;
+            border-bottom: solid 2px black
+        }
+        .list{
+            position: relative;
+            top:4px;
+        }
+        #main_image{
+            position:relative;
+            top:43px;
+            left:-20px;
+        }
+        #banner{
+            width:101.5%;
+            position:relative;
+            top:60px;
+            left:-20px;
+            font-size: 17px;
+            height: 60px;
+            color:white;
+            background-color: rgb(93, 91, 212);
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        #right{
+            position: relative;
+            top:4px;
+        }
+        #text{
+            padding-top:10px;
+        }
+        /* #main_text{
+            color: white;
+            overflow:visible;
+            z-index: 1;
+            position: relative;
+            top:100px;
+        } */
+        #main-text{
+            font-size: 40px;
+            color: white;
+            overflow: visible;
+            position: absolute; /* Позиционирование абсолютно */
+            top: 300px; /* Расположение сверху */
+            left: 50px; /* Расположение слева */
+            z-index:1; /* Поднять над изображением */
+        }
+        #text2{
+            position: absolute;
+            color:white;
+            overflow: visible;
+            z-index: 1;
+            top:580px;
+            left:50px;
+        }
+       #download{
+            position: absolute;
+            overflow: visible;
+            z-index: 1;
+            height:30px;
+            border:2px solid white;
+            background-color: rgb(93, 91, 212);
+            color:white;
+            font-size:14px;
+            font-weight: bolder;
+            left:200px;
+            top:620px;
+        }
+        #get-started{
+            position: absolute;
+            overflow: visible;
+            z-index: 1;
+            height:30px;
+            border:2px solid white;
+            background-color: white;
+            color:rgb(93, 91, 212);
+            font-size:14px;
+            font-weight: bolder;
+            left:50px;
+            top:620px;
+        }
+    </style>
+
+    <body>
+        <div class="page_top">
+            <img id="microsoft-logo" class="page_top_left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/1280px-Microsoft_logo_%282012%29.svg.png" width="110px">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="teams" class="page_top_left">Teams</span>
+            <span class="page_top_left"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span id="products">Продукты </span><img class="list" src="list.png" width="20px"> &nbsp; &nbsp; &nbsp; &nbsp; <span id="functions">Функции и возможности</span><img class="list" src="list.png" width="20px"> &nbsp; &nbsp; &nbsp; <span id="price">Цены</span> &nbsp; &nbsp; &nbsp; <span id="spheres">Отрасли</span><img class="list" src="list.png" width="20px"> &nbsp; &nbsp; &nbsp; <span id="resources">Ресурсы</span><img class="list" src="list.png" width="20px"> &nbsp; &nbsp; &nbsp;<span id="support">Поддержка</span></span>
+            <span id="page_top_right"><a id="download-teams" href="https://www.microsoft.com/en-us/microsoft-teams/download-app">Скачать Teams</a>&nbsp; &nbsp; &nbsp; <span id="enter">Войти</span> </span>
+        </div>
+        <div class="main">
+            <p id="banner"><span id="text">Switch to new Microsoft Teams today to scale your business and achieve more together. <strong>Learn more</strong><img id="right" src="right.png" width="20px"></span></p>
+            <img id="main_image" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blade002_Hero_1920x720_2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&qlt=95&fit=constrain" width="101.5%">
+            <h1 id="main-text">The new <br> Microsoft <br>Teams is now <br>generally <br>available</h1>
+            <span id="text2">Collaborate more effectively with a faster, <br>simpler, and smarter Teams.</span>
+            <input type="button" id="get-started" value="Get started">
+            <input type="button" id="download" value="Download now">
+        </div>
+    </body>
+
+
+
+</html>
