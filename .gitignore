@@ -1,2 +1,18 @@
-/venv
-/.DS_Store
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build files
+dist/
+
+# OS/IDE files
+.DS_Store
+.idea/
+.vscode/
+
+# Environment variables
+.env
